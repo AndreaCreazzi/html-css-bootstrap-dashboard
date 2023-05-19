@@ -12,15 +12,50 @@
 <body>
     <!-- navbar -->
     <header>
-
+        <nav class="navbar border border-dark">
+            <div class="container-fluid flex-nowrap">
+              <a class="navbar-brand"><img class="mobile-logo" src="img/mobile-logo.png" alt=""></a>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control bg-grey" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+                <button class="btn" type="submit"><i class="fa-solid fa-bell c-orange"></i></button>
+              </form>
+            </div>
+        </nav>
     </header>
     <!-- sidebar -->
-    <div>
-
+    <div class="sidebar d-flex">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col">
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#"><i class="fa-solid fa-chart-simple"></i></a>
+                    <a href="#"><i class="fa-solid fa-signal"></i></a>
+                </div>
+                <div class="col d-flex align-items-end">
+                    <a class="ps-2 pt-0 pb-3" href="#"><i class="fa-solid fa-gears"></i></i></a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- content -->
-    <main>
-    
+    <main class="content">
+        <section class="info text-white py-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Nuovo studente</p>
+                    </div>
+                    <div class="col-12">
+                        <h2>Boolean</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>Studenti online negli ultimi 30 minuti</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- bootstrap javascrip -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

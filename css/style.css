@@ -1,0 +1,57 @@
+section{
+    border: 2px dashed red;
+}
+
+.container{
+    border: 2px dashed blue;
+}
+
+.row{
+    border: 2px dashed green;
+}
+
+.mobile-logo{
+    height: auto;
+    width: 50px;
+}
+
+.c-orange{
+    color: orange;
+}
+
+.bg-grey{
+    background-color: #e9ecef;
+}
+
+.navbar ::placeholder{
+    color: grey;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+    position: absolute;
+    height: calc(100vh - 77px);
+    overflow: auto;
+}
+
+.sidebar a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.content{
+    margin-left: 70px;
+    overflow: auto;
+}
+
+.info{
+    background-color: #1b72e8;
+}
