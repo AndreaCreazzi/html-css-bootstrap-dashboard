@@ -1,4 +1,4 @@
-section{
+/* section{
     border: 2px dashed red;
 }
 
@@ -8,7 +8,9 @@ section{
 
 .row{
     border: 2px dashed green;
-}
+} */
+
+/* header */
 
 .mobile-logo{
     height: auto;
@@ -26,6 +28,8 @@ section{
 .navbar ::placeholder{
     color: grey;
 }
+
+/* sidebar */
 
 .sidebar {
     margin: 0;
@@ -47,11 +51,28 @@ section{
     text-decoration: none;
 }
 
-.content{
+/* main */
+
+main{
     margin-left: 70px;
     overflow: auto;
+    height: calc(100vh - 77px);
 }
 
 .info{
     background-color: #1b72e8;
+}
+
+.bg-superdark{
+    background-color: #e9ecef;
+}
+
+@media screen and (min-width:992px) {
+    .sidebar{
+        width: 150px;
+    }
+
+    .content{
+        margin-left: 150px;
+    }
 }
