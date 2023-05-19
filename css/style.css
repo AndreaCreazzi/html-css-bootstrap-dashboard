@@ -38,7 +38,7 @@
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
     position: absolute;
-    height: calc(100vh - 77px);
+    height: calc(100vh - 56px);
     overflow: auto;
 }
 
