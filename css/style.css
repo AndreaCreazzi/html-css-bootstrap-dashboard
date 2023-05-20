@@ -73,6 +73,10 @@ main{
     margin-right: 10px;
 }
 
+.offcanvas.offcanvas-end {
+    width: 100%;
+}
+
 @media screen and (min-width:992px) {
     .sidebar{
         width: 150px;
@@ -80,5 +84,9 @@ main{
 
     .content{
         margin-left: 150px;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 50%;
     }
 }
