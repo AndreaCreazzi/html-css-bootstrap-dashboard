@@ -79,11 +79,12 @@ main{
 
 /* hover */
 
-.sidebar a:hover{
+.sidebar .select:hover{
     background-color: white;
     opacity: 0.7;
     color: black;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .info .new-student:hover{
