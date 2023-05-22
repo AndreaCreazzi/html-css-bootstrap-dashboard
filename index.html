@@ -23,8 +23,8 @@
                 <button class="btn d-none d-lg-block" type="submit"><i class="fa-solid fa-circle-question"></i></i></button>
                 <button class="btn d-none d-lg-block" type="submit"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                 <div class="dropdown">
-                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-bell c-orange"></i></button>
+                    <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell c-orange fa-shake"></i></button>
                     </a>
                   
                     <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
                 <div class="row h-100">
                     <div class="col-12 col-md-3 order-md-3 mb-3">
                         <p class="d-inline-block me-2">Nuovo studente</p>
-                        <button class="btn border border  border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <button class="btn border border new-student border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             <i class="fa-solid fa-plus text-white"></i>
                         </button>
                         <div class="offcanvas offcanvas-end text-dark text-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -70,18 +70,18 @@
                             <div class="offcanvas-body">
                               <form class="row g-3">
                                 <div class="col-md-6">
-                                  <label for="inputEmail4" class="form-label">Email</label>
-                                  <input type="email" class="form-control" id="inputEmail4">
+                                  <label for="inputEmail4" class="form-label">Nome</label>
+                                  <input type="text" class="form-control" id="inputEmail4">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="inputPassword4" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="inputPassword4">
+                                  <label for="inputPassword4" class="form-label">Cognome</label>
+                                  <input type="text" class="form-control" id="inputPassword4">
                                 </div>
                                 <div class="col-md-6">
                                   <label for="inputEmail4" class="form-label">Email</label>
                                   <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    <input type="email" class="form-control" placeholder="ex: cicciogamer@paguri.it" aria-label="Username" aria-describedby="basic-addon1">
                                   </div>
                                 </div>
                                 <div class="col-md-6">
@@ -89,10 +89,10 @@
                                   <input type="password" class="form-control" id="inputPassword4">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <label for="inputEmail4" class="form-label">Indirizzo email</label>
                                   <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    <input type="email" class="form-control" placeholder="ex: cicciogamer@paguri.it" aria-label="Username" aria-describedby="basic-addon1">
                                   </div>
                                 </div>
                                 <div class="col-md-6">
@@ -100,34 +100,43 @@
                                   <input type="password" class="form-control" id="inputPassword4">
                                 </div>
                                 <div class="col-12">
-                                  <label for="inputAddress" class="form-label">Address</label>
-                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                  <label for="inputAddress" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="Via...">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="inputCity" class="form-label">City</label>
+                                  <label for="inputCity" class="form-label">Città</label>
                                   <input type="text" class="form-control" id="inputCity">
                                 </div>
                                 <div class="col-md-4">
-                                  <label for="inputState" class="form-label">State</label>
+                                  <label for="inputState" class="form-label">Stato</label>
                                   <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
+                                    <option selected>Cerca...</option>
+                                    <option>Italia</option>
+                                    <option>Francia</option>
+                                    <option>Spagna</option>
+                                    <option>Germania</option>
+                                    <option>Daje Roma Daje</option>
                                   </select>
                                 </div>
                                 <div class="col-md-2">
-                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <label for="inputZip" class="form-label">CAP</label>
                                   <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="formFile" class="form-label">Foto</label>
+                                  <input class="form-control" type="file" id="formFile">
                                 </div>
                                 <div class="col-12">
                                   <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="gridCheck">
                                     <label class="form-check-label" for="gridCheck">
-                                      Check me out
+                                      Seleziona per proseguire
                                     </label>
                                   </div>
                                 </div>
                                 <div class="col-12">
-                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                  <button type="submit" class="btn btn-primary">Salva</button>
+                                  <button type="reset" class="btn btn-warning">Svuota</button>
                                 </div>
                               </form>
                             </div>
@@ -198,8 +207,8 @@
                                     <td><span class="d-none d-md-inline-block"> 17 Feb 2021</span></td>
                                     <td><span class="d-none d-md-inline-block">20%</span></td>
                                     <td><span class="badge text-bg-warning">Process</span></td>
-                                    <td><i class="fa-solid fa-pen border border-secondary p-2"></i>
-                                        <i class="fa-solid fa-trash border border-secondary p-2"></i>
+                                    <td><i class="fa-solid fa-pen border border-secondary fa-fade p-2"></i>
+                                        <i class="fa-solid fa-trash border border-secondary fa-fade p-2"></i>
                                     </td>
                                   </tr>
                                   <tr>
@@ -216,8 +225,8 @@
                                     <td><span class="d-none d-md-inline-block"> 19 Feb 2021</span></td>
                                     <td><span class="d-none d-md-inline-block">20%</span></td>
                                     <td><span class="badge text-bg-danger">Failed</span></td>
-                                    <td><i class="fa-solid fa-pen border border-secondary p-2"></i>
-                                        <i class="fa-solid fa-trash border border-secondary p-2"></i>
+                                    <td><i class="fa-solid fa-pen border border-secondary fa-fade p-2"></i>
+                                        <i class="fa-solid fa-trash border border-secondary fa-fade p-2"></i>
                                     </td>
                                   </tr>
                                   <tr>
@@ -234,8 +243,8 @@
                                     <td><span class="d-none d-md-inline-block"> 21 Feb 2021</span></td>
                                     <td><span class="d-none d-md-inline-block">20%</span></td>
                                     <td><span class="badge text-bg-danger">Failed</span></td>
-                                    <td><i class="fa-solid fa-pen border border-secondary p-2"></i>
-                                        <i class="fa-solid fa-trash border border-secondary p-2"></i>
+                                    <td><i class="fa-solid fa-pen border border-secondary fa-fade p-2"></i>
+                                        <i class="fa-solid fa-trash border border-secondary fa-fade p-2"></i>
                                     </td>
                                   </tr>
                                   <tr>
@@ -292,8 +301,12 @@
                     <!-- todo and statista -->
                     <div class="col-12 col-lg-4 mb-4">
                         <div class="card mb-3">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-superdark fs-4 ">Todo</li>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-superdark fs-4 ">Todo</li>
+                          </ul>
+                          <div class="card-body">
+                            <div class="card">
+                              <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -319,6 +332,9 @@
                                     </div>
                                 </li>
                             </ul>    
+                            </div>
+                          </div>
+                            
                         </div>
                         <div class="card">
                             <div class="card-body">
